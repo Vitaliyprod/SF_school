@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Billable__c</fullName>
+    <description>if Dev has at least one billable project assigned - green image, else - yellow</description>
+    <externalId>false</externalId>
+    <formula>IF((Total_Billable_Projects__c &gt;=1) ,(IMAGE(&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/F1_green_flag.svg/1280px-F1_green_flag.svg.png&quot;, &quot;Dev has billable projec&quot;)) ,(IMAGE(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizenjEBUOiW4kwZIt_-w9Yp68kL0v64dAh2zq3miFJkr8_57NrF8PnbdngtyVgEA2CJQ&amp;usqp=CAU&quot;, &quot;Dev hasn&apos;t billable projec&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Billable?</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
